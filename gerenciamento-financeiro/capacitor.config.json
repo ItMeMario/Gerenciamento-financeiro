@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "gerenciamento-financeiro",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
