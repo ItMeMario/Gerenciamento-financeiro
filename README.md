@@ -1,4 +1,4 @@
-### Gerenciamento-financeiro
+## Gerenciamento-financeiro
 Trabalho em grupo
 > APP para avaliação de desenvolvimento em grupo. Mobile II - Sistemas para Internet, IELUSC. Prof. Gabriel Caixeta.
 
