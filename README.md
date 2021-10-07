@@ -12,3 +12,4 @@ Objetivos do aplicativo:
 - tab para exibir as informações sobre o sistema.(  versão, desenvolvedores etc.) 
 
 #### Aplicativo desenvolvido em IONIC, VUE
+teste
