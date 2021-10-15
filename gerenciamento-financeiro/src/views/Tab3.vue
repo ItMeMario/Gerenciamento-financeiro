@@ -131,7 +131,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style >
 .container {
   height: 100%;
   display: flex;
