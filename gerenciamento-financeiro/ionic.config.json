@@ -1,7 +1,0 @@
-{
-  "name": "gerenciamento-financeiro",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
