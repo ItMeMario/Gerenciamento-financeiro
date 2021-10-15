@@ -15,26 +15,31 @@
               </ion-fab-button>
             </div>
             <ion-item class="item">
-              <ion-label position="floating">Nome</ion-label>
+              <ion-label position="floating">Descrição</ion-label>
+              <ion-input type="text" v-model="inputDescricao"></ion-input>
+            </ion-item>
+            <ion-item class="item">
+              <ion-label position="floating">Tipo da receita</ion-label>
               <ion-input
                 type="text"
-                v-model="inputNome"
+                v-model="inputReceita"
                 required="true"
               ></ion-input>
             </ion-item>
             <ion-item class="item">
-              <ion-label>Data de Nascimento</ion-label>
-              <ion-input type="date" v-model="inputData"></ion-input>
+              <ion-label position="floating">Valor</ion-label>
+              <ion-input type="number" v-model="inputValor"></ion-input>
             </ion-item>
             <ion-item class="item">
-              <ion-label position="floating">Telefone</ion-label>
-              <ion-input type="number" v-model="inputTel"></ion-input>
+              <ion-label position="floating">Data</ion-label>
+              <ion-input type="date" v-model="inputData"></ion-input>
             </ion-item>
+
             <ion-button @click="salvarInformacoes">Salvar</ion-button>
             <h6>
-              Nome: {{ nome }} | Data de Nascimento: {{ data }} | Telefone:
-              {{ telefone }}
-            </h6>
+              Tipo da Receita: {{ receita }} |  Valor:
+              {{ valor }} | Descrição: {{descricao}} | Data: {{ data }} 
+            </h6> 
           </ion-col>
         </div>
       </div>
@@ -78,22 +83,27 @@ export default defineComponent({
   },
   methods: {
     salvarInformacoes() {
-      const nome = this.inputNome;
-      this.nome = nome;
+      const receita = this.inputReceita;
+      this.receita = receita;
+      const valor = this.inputValor;
+      this.valor = valor;
+      const descricao = this.inputDescricao;
+      this.descricao = descricao;
       const data = this.inputData;
-      this.data = data;
-      const telefone = this.inputTel;
-      this.telefone = telefone;
+      this.data = data
+      
     },
   },
   data() {
     return {
-      inputNome: "",
-      nome: "",
+      inputReceita: "",
+      receita: "",
+      inputValor: "",
+      valor: "",
+      inputDescricao:"",
+      descricao:"",
       inputData: "",
       data: "",
-      inputTel: "",
-      telefone: "",
     };
   },
   setup() {
